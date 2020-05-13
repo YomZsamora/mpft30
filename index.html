@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MPFT30 - Unblocking Session</title>
+    <link rel="shortcut icon" href="images/profilePic.png">
+   	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+   	<link rel='stylesheet' href='css/styles.css'>
+   	<link rel='stylesheet' href='css/animate.css'>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 intro">
+				<div class="intro text-center">
+					<h1 class="mb-0">MPFT30
+						<span class="text-primary">Session</span>
+					</h1>
+					<hr>
+					<img src="images/profilePic.png" class="img-small">
+					<p>This application generally manages the basic operations of a hair salon. The owner should be able to add a list of the stylists, and for each stylist, add clients who see that stylist. The stylists work independently, so each client only belongs to a single stylist.</p>
+					<!-- <small><a id="showImage" >View Image</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a id="hideImage" >Hide Image</a></small> -->
+					<button class="btn btn-sm btn-success btn-block wobble-image">Wobble Image</button>
+				</div>
+				<div class="panel-body panel-header">
+		        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;Create a <strong>NEW SQUAD</strong> for your Heroes Here.
+		    </div>
+		    <div class="panel-footer">
+		    	<form action="/createSquad" method="post" name="squadForm">
+		    		<input id="squadsinput" class="form-control mb0" type="text" placeholder="Enter Squad's Name..." name="squad_name" autocomplete="off">
+		    		<p class="squads">Examples: Suicide Squad, Avengers, The Defenders, Justice League, A-Team ...</p>
+			        <br><p class="label">Squad's Max Size:</p>
+			        <input class="form-control mb0" type="number" placeholder="Max Size..." name="squad_size" type="text" />
+	             	<select class="form-control select2 mt15 mb0" data-placeholder="Squad's Cause" name="squad_cause">
+	                	<option label="- Squad's Cause / Motive -"></option>
+		                <option value="Track Hacker's">Track Hacker's</option>
+		                <option value="Prevent Alien Invasion">Prevent Alien Invasion</option>
+		                <option value="Fight Sexism">Fight Sexism</option>
+		                <option value="Black Lives Matter">Black Lives Matter</option>
+		                <option value="Suicide">Suicide</option>
+		                <option value="Democracy">Democracy</option>
+		                <option value="Drive Fast">Drive Fast</option>
+		                <option value="Fight Anti-Heroes">Fight Anti-Heroes</option>
+		                <option value="Live Fast, Die Young">Live Fast, Die Young</option>
+		            </select>
+		            <br><button type="submit" class="btn btn-success btn-xs"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;Create Squad</button>
+		    	</form>			        
+		    </div>
+				
+				<p id="output"></p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
